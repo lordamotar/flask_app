@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Добавить нового члена команды</h1>
+    <form method="POST">
+        <div class="form-group">
+            <label>Имя:</label>
+            <input type="text" name="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Должность:</label>
+            <input type="text" name="position" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Фото (URL):</label>
+            <input type="text" name="photo" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Текст:</label>
+            <textarea name="text" class="form-control"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Описание:</label>
+            <textarea name="description" class="form-control"></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label>Facebook:</label>
+            <input type="text" name="facebook" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Instagram:</label>
+            <input type="text" name="instagram" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>WhatsApp:</label>
+            <input type="text" name="whatsapp" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Telegram:</label>
+            <input type="text" name="telegram" class="form-control">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Добавить</button>
+    </form>
+</div>
+{% endblock %} 
